@@ -33,7 +33,7 @@
 
 
 
-	<title>Djmix</title>
+	<title>Djmix Argentina</title>
 	
 </head>
 <body>
