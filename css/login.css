@@ -1,0 +1,391 @@
+ /* L O G I N  I N  M O D A L */
+.btm {
+	background: transparent;
+	border-radius: none;
+	border:none;
+	padding:0;
+	margin:0;
+}
+.btm:hover {
+	background: transparent;
+}
+.button {
+	outline: none;
+	border:none;
+	padding:0;
+	margin:0;
+}
+
+
+/* quita el borde sombreado alrededor de "iniciar sesión" */
+button:focus{
+	outline:0px;
+}
+button .submit:focus {
+	outline: 0px;
+	border:0;
+}
+button .submit:hover {
+	outline: 0px;
+	border:0;
+}
+
+/* Modal */
+.modal-content {
+	background: #fff;
+	border-radius: 0.8rem;
+}
+
+/* TITULO / BORRA EL BORDER-BOTTOM */
+.modal-header {
+	border-bottom:none;
+}
+/* FOOTER / BORRA EL BODER-TOP */
+.modal-footer {
+	border-top:none;
+	margin-bottom:30px;
+}
+button.close {
+
+}
+/* BOTÓN DE CERRAR */
+.btn-close {
+	width: 40px;
+	height:40px;
+	color: #333;
+	text-shadow: #333;
+}
+
+/* CAMBIA EL COLOR DE EMAIL Y CONTRASEÑA */
+.color-label {
+	color: #535d65;
+	font-weight: bolder;
+}
+/* CONTENEDOR */
+.modal-body {
+	color: #333;
+	margin-top:0;
+	margin-bottom:30px;
+	margin-right:40px;
+	margin-left:40px;
+}
+/* CAMBIA EL COLOR DEL CHECK LABEL */
+.form-check-label {
+    margin-bottom: 0;
+    color: #6c757d;
+    font-weight: bolder;
+    font-size:0.8em;
+}
+/* CAMBIA EL TITULO "BIENVENIDO" */
+h1.modal-tit {
+	font-size: 2.7rem;
+	font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 0;
+    background: -webkit-linear-gradient(left, #2c3673, #46f8ff);
+    background: linear-gradient(to right, #2c3673, #46f8ff);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;  
+}
+
+/* CAMBIA LA CAJA DE EMAIL Y CONTRASEÑA */
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-size: 1rem;
+    height:40px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: transparent;
+    border-bottom: 2px solid #42C9E1;
+    border-top:0;
+    border-right:0;
+    border-left:0;
+    border-radius: 0rem;
+    transition: .30s ease-in-out;
+}
+
+/* CAMBIA EL COLOR DE FONDO, BOTTOM, Y BOX SHADOW CUANDO SE SELECCIONA LA CAJA DE EMAIL Y CONTRASEÑA */
+.form-control:focus {
+	background: linear-gradient(135deg, rgba(69, 255, 229, 0.47) 0%, rgba(67, 128, 146, 0.42) 50%, rgba(50, 103, 150, 0.6) 100%);
+    border-radius: 0;
+    color: #ddd;
+    font-weight: 400;
+    border-left: 0;
+    letter-spacing:2px;
+    height:40px;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 2px solid rgba(0,0,0,0.10);
+    padding-top:5px;
+    padding-left:25px;
+    padding-right:5px;
+    padding-bottom:5px;
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgba(0,0,0,0);
+    transform: 1ms;
+
+}
+
+/* BOTON "ENTRAR" */
+.btn-modal {
+	width:100px;
+	border-radius: 50px;
+	background: -webkit-linear-gradient(left, #2c3673, #46f8ff);
+	transition: .30s ease-in-out;
+
+}
+.btn-modal:hover {
+	background: -webkit-linear-gradient(left, #46f8ff, #2c3673);
+}
+.btn-modal:focus {
+	background: transparent;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+.gal-container{
+	padding: 12px;
+}
+.gal-item{
+	overflow: hidden;
+	padding: 3px;
+}
+.gal-item .box{
+	height: 350px;
+	overflow: hidden;
+}
+.box img{
+	height: 100%;
+	width: 100%;
+	object-fit:cover;
+	-o-object-fit:cover;
+}
+.gal-item a:focus{
+	outline: none;
+}
+.gal-item a:after{
+	content:"\e003";
+	font-family: 'Glyphicons Halflings';
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.75);
+	position: absolute;
+	right: 3px;
+	left: 3px;
+	top: 3px;
+	bottom: 3px;
+	text-align: center;
+    line-height: 350px;
+    font-size: 30px;
+    color: #fff;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+.gal-item a:hover:after{
+	opacity: 1;
+}
+.modal-open .gal-container .modal{
+	background-color: rgba(0,0,0,0.4);
+}
+.modal-open .gal-item .modal-body{
+	padding: 0px;
+}
+.modal-open .gal-item button.close{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #000;
+    opacity: 1;
+    color: #fff;
+    z-index: 999;
+    right: -12px;
+    top: -12px;
+    border-radius: 50%;
+    font-size: 15px;
+    border: 2px solid #fff;
+    line-height: 25px;
+    -webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
+	box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
+}
+.modal-open .gal-item button.close:focus{
+	outline: none;
+}
+.modal-open .gal-item button.close span{
+	position: relative;
+	top: -3px;
+	font-weight: lighter;
+	text-shadow:none;
+}
+.gal-container .modal-dialogue{
+	width: 80%;
+}
+.gal-container .description{
+	position: relative;
+	height: 40px;
+	top: -40px;
+	padding: 10px 25px;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	text-align: left;
+}
+.gal-container .description h4{
+	margin:0px;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 20px;
+}
+.gal-container .modal.fade .modal-dialog {
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    transform: scale(0.1);
+    top: 100px;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.gal-container .modal.fade.in .modal-dialog {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform: translate3d(0, -100px, 0);
+    transform: translate3d(0, -100px, 0);
+    opacity: 1;
+}
+@media (min-width: 768px) {
+.gal-container .modal-dialog {
+    width: 55%;
+    margin: 50 auto;
+}
+}
+@media (max-width: 768px) {
+    .gal-container .modal-content{
+        height:250px;
+    }
+}
+/* Footer Style */
+i.red{
+    color:#BC0213;
+}
+.gal-container{
+    padding-top :75px;
+    padding-bottom:75px;
+}
+footer{
+    font-family: 'Quicksand', sans-serif;
+}
+footer a,footer a:hover{
+    color: #88C425;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
